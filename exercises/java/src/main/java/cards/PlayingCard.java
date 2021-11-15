@@ -9,6 +9,10 @@ public class PlayingCard {
         this.faceValue = faceValue + 1;
     }
 
+    public PlayingCard(int suitOrdinal, int faceValue) {
+        this(Suit.values()[suitOrdinal], faceValue);
+    }
+
     @Override
     public String toString() {
         return faceValueName() + " of " + suitName();

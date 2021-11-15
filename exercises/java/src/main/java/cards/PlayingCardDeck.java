@@ -8,10 +8,11 @@ public class PlayingCardDeck {
 
         for (int suit = 0; suit < 4; suit++) {
             for (int faceValue = 0; faceValue < 13; faceValue++) {
-                cards[suit * 13 + faceValue] = new PlayingCard(Suit.values()[suit], faceValue);
+                cards[suit * 13 + faceValue] = new PlayingCard(suit, faceValue);
             }
         }
     }
+
     public String[] getCards() {
         String[] result = new String[52];
         int cardNumber = 0;

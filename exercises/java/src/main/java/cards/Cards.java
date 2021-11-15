@@ -9,6 +9,7 @@ public class Cards {
             System.out.println(card);
         }
     }
+
     String[] getCards() {
         PlayingCardDeck deck = new PlayingCardDeck();
         return deck.getCards();
