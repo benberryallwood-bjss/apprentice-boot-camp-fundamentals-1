@@ -11,13 +11,6 @@ public class PlayingCard {
 
     @Override
     public String toString() {
-        String output = "";
-        String suitAsString;
-
-        switch (suit) {
-            case 0:
-
-        }
         return faceValueName() + " of " + suitName();
     }
 
