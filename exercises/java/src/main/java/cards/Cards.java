@@ -11,17 +11,17 @@ public class Cards {
 
     String[] getCards() {
         String[] result = new String[52];
-        int[][] deck = new int[52][2];
+        PlayingCard[] deck = new PlayingCard[52];
 
         for (int suit = 0; suit < 4; suit++) {
             for (int faceValue = 0; faceValue < 13; faceValue++) {
-                deck[suit*13+faceValue] = new int[]{suit, faceValue};
+                deck[suit * 13 + faceValue] = new PlayingCard(suit, faceValue);
             }
         }
 
         int cardNumber = 0;
-        for (int[] card : deck) {
-            String faceValueName;
+        for (PlayingCard card : deck) {
+            /*String faceValueName;
             switch (card[1]){
                 case 0: faceValueName = "ace"; break;
                 case 1:
@@ -48,7 +48,9 @@ public class Cards {
                 default: throw new IllegalArgumentException("Something went wrong " + card[0] + "is not a valid suitName!");
             }
 
-            result[cardNumber] = faceValueName + " of " + suitName;
+             */
+
+            result[cardNumber] = card.toString();
             cardNumber++;
         }
 
