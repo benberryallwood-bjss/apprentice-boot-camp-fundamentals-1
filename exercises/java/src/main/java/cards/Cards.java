@@ -15,7 +15,7 @@ public class Cards {
 
         for (int suit = 0; suit < 4; suit++) {
             for (int faceValue = 0; faceValue < 13; faceValue++) {
-                deck[suit * 13 + faceValue] = new PlayingCard(suit, faceValue);
+                deck[suit * 13 + faceValue] = new PlayingCard(Suit.values()[suit], faceValue);
             }
         }
 

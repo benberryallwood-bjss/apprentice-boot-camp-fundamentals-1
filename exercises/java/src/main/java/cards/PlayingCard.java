@@ -1,10 +1,12 @@
 package cards;
 
+import java.util.Locale;
+
 public class PlayingCard {
-    private final int suit;
+    private final Suit suit;
     private final int faceValue;
 
-    public PlayingCard(int suit, int faceValue) {
+    public PlayingCard(Suit suit, int faceValue) {
         this.suit = suit;
         this.faceValue = faceValue + 1;
     }
@@ -15,13 +17,7 @@ public class PlayingCard {
     }
 
     private String suitName() {
-        switch (suit) {
-            case 0: return "clubs";
-            case 1: return "diamonds";
-            case 2: return "hearts";
-            case 3: return "spades";
-            default: return null;
-        }
+        return suit.toString().toLowerCase();
     }
 
     private String faceValueName() {
