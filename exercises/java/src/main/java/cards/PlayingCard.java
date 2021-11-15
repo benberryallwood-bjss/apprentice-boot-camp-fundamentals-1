@@ -1,8 +1,8 @@
 package cards;
 
 public class PlayingCard {
-    private int suit;
-    private int faceValue;
+    private final int suit;
+    private final int faceValue;
 
     public PlayingCard(int suit, int faceValue) {
         this.suit = suit;
