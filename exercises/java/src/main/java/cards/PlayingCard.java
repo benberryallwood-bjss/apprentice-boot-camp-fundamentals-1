@@ -1,7 +1,5 @@
 package cards;
 
-import java.util.Locale;
-
 public class PlayingCard {
     private final Suit suit;
     private final int faceValue;
