@@ -1,6 +1,6 @@
 package cards;
 
-public class PlayingCard {
+public class PlayingCard implements Card {
     private final Suit suit;
     private final String faceValue;
 
@@ -32,5 +32,15 @@ public class PlayingCard {
 
     private String suitName() {
         return suit.toString().toLowerCase();
+    }
+
+    @Override
+    public boolean snap(Card otherCard) {
+        return faceValue.equals(otherCard.comparisonValue());
+    }
+
+    @Override
+    public String comparisonValue() {
+        return faceValue;
     }
 }

@@ -14,6 +14,11 @@ public class AnimalCard implements Card {
     }
 
     @Override
+    public String comparisonValue() {
+        return animal.toString();
+    }
+
+    @Override
     public String toString() {
         return animal.toString();
     }
