@@ -3,24 +3,24 @@ package cards;
 import java.util.Collections;
 import java.util.List;
 
-public interface Deck {
-    List<Card> getCardList();
+public abstract class Deck {
+    List<Card> cards;
 
-    default String[] getCards() {
-        String[] result = new String[getCardList().size()];
+     String[] getCards() {
+        String[] result = new String[cards.size()];
         int cardNumber = 0;
-        for (Card card : getCardList()) {
+        for (Card card : cards) {
             result[cardNumber] = card.toString();
             cardNumber++;
         }
         return result;
     }
 
-    default void shuffle() {
-        Collections.shuffle(getCardList());
+    void shuffle() {
+        Collections.shuffle(cards);
     }
 
-    default Card deal() {
-        return getCardList().remove(0);
+    Card deal() {
+        return cards.remove(0);
     }
 }
