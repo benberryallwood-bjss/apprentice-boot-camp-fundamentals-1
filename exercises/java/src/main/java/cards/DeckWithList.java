@@ -26,6 +26,9 @@ public abstract class DeckWithList implements Deck {
     }
 
     public Card deal() {
+        if (cards.size() == 0) {
+            return null;
+        }
         return cards.remove(0);
     }
 
