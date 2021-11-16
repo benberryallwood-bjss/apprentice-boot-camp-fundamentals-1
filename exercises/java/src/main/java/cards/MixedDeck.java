@@ -9,7 +9,6 @@ public class MixedDeck extends DeckWithList {
         while (currentCard != null) {
             add(currentCard);
             currentCard = animalDeck.deal();
-//            if (currentCard == null) currentCard = playingCardDeck.deal();
         }
 
         currentCard = playingCardDeck.deal();
