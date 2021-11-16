@@ -1,10 +1,15 @@
 package cards;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public abstract class Deck {
      protected List<Card> cards;
+
+     Deck() {
+         cards = new ArrayList<>();
+     }
 
      String[] getCards() {
         String[] result = new String[cards.size()];
