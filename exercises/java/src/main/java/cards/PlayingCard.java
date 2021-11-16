@@ -39,11 +39,5 @@ public class PlayingCard implements Card {
          String otherFaceValue = otherCard.toString()
                  .split(" ")[0];
          return faceValue.equals(otherFaceValue);
-//        return faceValue.equals(otherCard.comparisonValue());
     }
-
-//    @Override
-//    public String comparisonValue() {
-//        return faceValue;
-//    }
 }
