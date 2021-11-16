@@ -1,6 +1,6 @@
 package cards;
 
-class AnimalDeck extends Deck {
+class AnimalDeck extends DeckWithList {
     public AnimalDeck() {
         for (Animal animal : Animal.values()) {
             add(new AnimalCard(animal));
