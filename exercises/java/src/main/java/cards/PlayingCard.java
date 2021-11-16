@@ -36,11 +36,14 @@ public class PlayingCard implements Card {
 
     @Override
     public boolean snap(Card otherCard) {
-        return faceValue.equals(otherCard.comparisonValue());
+         String otherFaceValue = otherCard.toString()
+                 .split(" ")[0];
+         return faceValue.equals(otherFaceValue);
+//        return faceValue.equals(otherCard.comparisonValue());
     }
 
-    @Override
-    public String comparisonValue() {
-        return faceValue;
-    }
+//    @Override
+//    public String comparisonValue() {
+//        return faceValue;
+//    }
 }

@@ -13,10 +13,10 @@ public class AnimalCard implements Card {
         return otherCard != null && toString().equals(otherCard.toString());
     }
 
-    @Override
-    public String comparisonValue() {
-        return animal.toString();
-    }
+//    @Override
+//    public String comparisonValue() {
+//        return animal.toString();
+//    }
 
     @Override
     public String toString() {
