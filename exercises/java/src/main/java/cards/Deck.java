@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 public abstract class Deck {
-    List<Card> cards;
+     protected List<Card> cards;
 
      String[] getCards() {
         String[] result = new String[cards.size()];
