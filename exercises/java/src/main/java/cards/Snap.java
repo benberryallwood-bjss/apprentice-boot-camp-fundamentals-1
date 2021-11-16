@@ -1,6 +1,5 @@
 package cards;
 
-import java.util.List;
 import java.util.Scanner;
 
 class Snap {
@@ -14,8 +13,8 @@ class Snap {
     }
 
     public static void main(String[] args) {
-        Deck deck = new AnimalDeck();
-//        Deck deck = new PlayingCardDeck();
+//        Deck deck = new AnimalDeck();
+        Deck deck = new PlayingCardDeck();
         Snap snap = new Snap(deck);
         snap.play();
     }

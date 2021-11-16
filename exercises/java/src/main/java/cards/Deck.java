@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public abstract class Deck {
-     protected List<Card> cards;
+     private final List<Card> cards;
 
      Deck() {
          cards = new ArrayList<>();
@@ -27,5 +27,9 @@ public abstract class Deck {
 
     Card deal() {
         return cards.remove(0);
+    }
+
+    void add(Card card) {
+         cards.add(card);
     }
 }
