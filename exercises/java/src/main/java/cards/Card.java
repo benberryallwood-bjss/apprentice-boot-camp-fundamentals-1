@@ -1,5 +1,5 @@
 package cards;
 
-public abstract class Card {
-    abstract boolean snap(Card otherCard);
+interface Card {
+    boolean snap(Card otherCard);
 }
