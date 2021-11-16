@@ -8,7 +8,7 @@ class AnimalDeck implements Deck {
 
     private final List<Card> cards;
 
-    AnimalDeck() {
+    public AnimalDeck() {
         cards = new ArrayList<>();
         for (Animal animal : Animal.values()) {
             cards.add(new AnimalCard(animal));
@@ -17,23 +17,28 @@ class AnimalDeck implements Deck {
     }
 
     @Override
-    public String[] getCards() {
-        String[] result = new String[cards.size()];
-        int cardNumber = 0;
-        for (Card card : cards) {
-            result[cardNumber] = card.toString();
-            cardNumber++;
-        }
-        return result;
+    public List<Card> getCardList() {
+        return cards;
     }
 
-    @Override
-    public Card deal() {
-        return cards.remove(0);
-    }
+//    @Override
+//    public String[] getCards() {
+//        String[] result = new String[cards.size()];
+//        int cardNumber = 0;
+//        for (Card card : cards) {
+//            result[cardNumber] = card.toString();
+//            cardNumber++;
+//        }
+//        return result;
+//    }
 
-    @Override
-    public void shuffle() {
-        Collections.shuffle(cards);
-    }
+//    @Override
+//    public Card deal() {
+//        return cards.remove(0);
+//    }
+
+//    @Override
+//    public void shuffle() {
+//        Collections.shuffle(cards);
+//    }
 }

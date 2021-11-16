@@ -18,23 +18,28 @@ public class PlayingCardDeck implements Deck {
     }
 
     @Override
-    public String[] getCards() {
-        String[] result = new String[52];
-        int cardNumber = 0;
-        for (Card card : cards) {
-            result[cardNumber] = card.toString();
-            cardNumber++;
-        }
-        return result;
+    public List<Card> getCardList() {
+        return cards;
     }
 
-    @Override
-    public Card deal() {
-        return cards.remove(0);
-    }
+//    @Override
+//    public String[] getCards() {
+//        String[] result = new String[52];
+//        int cardNumber = 0;
+//        for (Card card : cards) {
+//            result[cardNumber] = card.toString();
+//            cardNumber++;
+//        }
+//        return result;
+//    }
 
-    @Override
-    public void shuffle() {
-        Collections.shuffle(cards);
-    }
+//    @Override
+//    public Card deal() {
+//        return cards.remove(0);
+//    }
+
+//    @Override
+//    public void shuffle() {
+//        Collections.shuffle(cards);
+//    }
 }
