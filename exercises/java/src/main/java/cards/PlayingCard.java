@@ -5,6 +5,9 @@ public class PlayingCard {
     private final int faceValue;
 
     public PlayingCard(Suit suit, int faceValue) {
+        if (faceValue < 1 || faceValue > 13) {
+            throw new IllegalArgumentException("faceValue (" + faceValue + ") must be between 1 and 13");
+        }
         this.suit = suit;
         this.faceValue = faceValue;
     }
@@ -33,7 +36,7 @@ public class PlayingCard {
             case 11: return "jack";
             case 12: return "queen";
             case 13: return "king";
-            default: return null;
+            default: return null; // cannot happen because of constructor
         }
     }
 }

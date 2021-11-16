@@ -1,7 +1,7 @@
 package cards;
 
 public class PlayingCardDeck {
-    private PlayingCard[] cards;
+    private final PlayingCard[] cards;
 
     public PlayingCardDeck() {
         cards = new PlayingCard[52];
