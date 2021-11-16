@@ -6,12 +6,6 @@ public class PlayingCardDeck {
     public PlayingCardDeck() {
         cards = new PlayingCard[52];
 
-        /*for (int suit = 0; suit < 4; suit++) {
-            for (int faceValue = 1; faceValue < 14; faceValue++) {
-                cards[suit * 13 + faceValue - 1] = new PlayingCard(suit, faceValue);
-            }
-        }*/
-
         for (Suit suit : Suit.values()) {
             for (int faceValue = 1; faceValue < 14; faceValue++) {
                 cards[suit.ordinal() * 13 + faceValue - 1] = new PlayingCard(suit, faceValue);
