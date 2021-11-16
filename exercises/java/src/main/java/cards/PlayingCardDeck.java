@@ -17,6 +17,7 @@ public class PlayingCardDeck implements Deck {
         }
     }
 
+    @Override
     public String[] getCards() {
         String[] result = new String[52];
         int cardNumber = 0;
