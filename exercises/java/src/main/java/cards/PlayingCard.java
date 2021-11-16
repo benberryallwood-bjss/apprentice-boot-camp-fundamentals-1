@@ -6,11 +6,7 @@ public class PlayingCard {
 
     public PlayingCard(Suit suit, int faceValue) {
         this.suit = suit;
-        this.faceValue = faceValue + 1;
-    }
-
-    public PlayingCard(int suitOrdinal, int faceValue) {
-        this(Suit.values()[suitOrdinal], faceValue);
+        this.faceValue = faceValue;
     }
 
     @Override
