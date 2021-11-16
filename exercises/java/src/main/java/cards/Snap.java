@@ -14,6 +14,7 @@ class Snap {
 
     public static void main(String[] args) {
         Deck deck = new AnimalDeck();
+//        Deck deck = new PlayingCardDeck();
         Snap snap = new Snap(deck);
         snap.play();
     }
